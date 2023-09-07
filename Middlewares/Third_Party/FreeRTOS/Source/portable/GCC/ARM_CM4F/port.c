@@ -503,9 +503,9 @@ void xPortSysTickHandler( void )
 			portNVIC_INT_CTRL_REG = portNVIC_PENDSVSET_BIT;
 		}
 		else
-+		{
-+			traceISR_EXIT();
-+		}
+		{
+			traceISR_EXIT();
+		}
 	}
 	portENABLE_INTERRUPTS();
 }
